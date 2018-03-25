@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Me</title>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'for_main.css' %}"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.ftr{
+	background-color:black;
+	bottom:0;
+	height:50px;
+	width:100%;
+	margin-top:10px;
+	text-align: center;
+	color:white;
+    padding-top:15px;
+	position:fixed;
+	
+}
+</style>
+</head>
+<body style="background-image:url({% static 'sheet4.jpg' %} ) ">
+
+ {% include 'includes/nav_bar.html' %}
+
+<div class="container">
+  <div class="row abt_row">
+    <div class="col-xs-3">
+	  <img src="{% static 'mypic.jpg' %} " class="img-responsive abt_pic"/>
+	</div>
+	<div class="col-xs-8">
+	  <h3>Anindya Das</h3>
+	  <div>Hey there! My name is Anindya Das. Nice to meet you! I'm currently pursuing my Computer Science degree from SRM Institute of Science and Technology.
+	  Since I'm aspiring to become a web developer, I made this website for my practice.<br/><br/>
+	  More new features will be added soon!
+	  </div>
+	  
+	    <h4>Thank You</h4>
+	  
+	</div>
+
+
+</div>
+</div>
+
+
+ 
+<div class="ftr">
+  <p>Terms and Conditions are Written here!</p>
+</div>
+
+</body>
+</html>  
+	
